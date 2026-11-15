@@ -34,9 +34,6 @@ RefCOCOg at `datasets/refcocog`. Visual Genome and RefCOCO+ go in `datasets/vg` 
 
 This project was built as a team by:
 
-- **Shi Bin (Liam) Hoo** ([@liam-sbhoo](https://github.com/liam-sbhoo))
-- **Upamanyu Das** ([@tintindas](https://github.com/tintindas))
-- **Yumna Ali** ([@Yuumna](https://github.com/Yuumna))
-
-This repository is a cleaned-up copy of the team's original repository, with a fresh
-git history. The original commit history isn't included.
+- **Shi Bin (Liam) Hoo**
+- **Upamanyu Das**
+- **Yumna Ali**

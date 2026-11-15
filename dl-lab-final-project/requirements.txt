@@ -1,0 +1,7 @@
+lightning
+lightning-bolts
+torch
+torchvision
+tensorboard
+salesforce-lavis
+pycocotools

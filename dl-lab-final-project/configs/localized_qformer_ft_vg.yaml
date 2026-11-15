@@ -1,0 +1,32 @@
+train:
+  # -----------------------------------------------
+  # training configurations (adapted from lavis/projects/blip2/train/pretrain_stage1.yaml)
+  init_lr: 1e-5
+  warmup_lr: 1e-6
+  warmup_steps: 900
+
+  weight_decay: 0.05
+  max_epoch: 1
+  batch_size_train: 32
+  batch_size_eval: 64
+  num_workers: 4
+
+  seed: 42
+  # output_dir: "output/BLIP2/Pretrain_stage1"
+  # -----------------------------------------------
+
+  # Lightning Trainer configurations
+  grad_accumulate_batches: 3  # accumulate gradients for n batches before optimizing  
+  val_check_interval: 0.1  # validate every n train steps
+  check_val_every_n_epoch: 1  # how often to check val
+  log_every_n_steps: 50  # how often to log within steps.
+  # log_every_n_steps: 25  # how often to log within steps.
+  precision: 16
+
+  # -----------------------------------------------
+
+  # Evaluate on RefCOCOg during training
+  run_test_every_n_val_iters: 3  # how often to run test during val loop
+  test_gt_file: "shared/datasets/refcocog/refs(umd).p"
+  test_dataset_format: "RefCOCO"
+

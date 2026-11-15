@@ -1,0 +1,37 @@
+Evaluation Total time: 1:32:25 (17.7158 s / it)
+2023-06-26 19:30:41,728 [WARNING] rank 0 starts merging results.
+result file saved to /home/shared/mambaforge/envs/lab/lib/python3.10/site-packages/lavis/output/BLIP2/caption_coco/20230626175/result/test_epochbest.json
+Downloading https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_test_gt.json to /export/home/.cache/lavis/coco_gt/coco_karpathy_test_gt.json
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2656833/2656833 [00:00<00:00, 183502647.57it/s]
+loading annotations into memory...
+Done (t=0.03s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+tokenization...
+PTBTokenizer tokenized 307085 tokens at 867683.66 tokens per second.
+PTBTokenizer tokenized 57827 tokens at 342897.76 tokens per second.
+setting up scorers...
+computing Bleu score...
+{'testlen': 52720, 'reflen': 51067, 'guess': [52720, 47720, 42720, 37720], 'correct': [41418, 24838, 13881, 7616]}
+ratio: 1.0323692404096378
+Bleu_1: 0.786
+Bleu_2: 0.639
+Bleu_3: 0.510
+Bleu_4: 0.405
+computing METEOR score...
+METEOR: 0.322
+computing Rouge score...
+ROUGE_L: 0.610
+computing CIDEr score...
+CIDEr: 1.391
+Bleu_1: 0.786
+Bleu_2: 0.639
+Bleu_3: 0.510
+Bleu_4: 0.405
+METEOR: 0.322
+ROUGE_L: 0.610
+CIDEr: 1.391

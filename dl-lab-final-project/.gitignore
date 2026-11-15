@@ -1,0 +1,15 @@
+lightning_logs/*
+datasets/refcoco+
+datasets/vg
+**/__pycache__/**
+.idea
+cache/
+output/
+checkpoints/
+launch.json
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+datasets/coco2014
+datasets/refcocog

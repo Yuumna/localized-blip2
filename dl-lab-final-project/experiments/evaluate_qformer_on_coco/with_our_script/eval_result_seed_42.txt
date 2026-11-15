@@ -1,0 +1,54 @@
+(lab) liam_sbhoo@instance-1:~/dl-lab-final-project$ python evaluate_blip2_qformer_on_coco.py 
+Task: Evaluate BLIP2-Qformer on COCO
+args:
+{'debug': False, 'skip_download': False}
+Position interpolate from 16x16 to 26x26
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Setting up for test
+vis_root: ./datasets/coco2014/coco/images
+-- test_set size = 5000
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing DataLoader 0:   0%|                                                                                                      | 0/313 [00:00<?, ?it/s]
+/home/shared/mambaforge/envs/lab/lib/python3.10/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 313/313 [26:10<00:00,  5.02s/it]
+Using downloaded and verified file: ./datasets/coco2014/coco_gt/coco_karpathy_test_gt.json
+loading annotations into memory...
+Done (t=0.05s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+tokenization...
+PTBTokenizer tokenized 307085 tokens at 728152.13 tokens per second.
+PTBTokenizer tokenized 57604 tokens at 357834.54 tokens per second.
+setting up scorers...
+computing Bleu score...
+{'testlen': 52411, 'reflen': 50830, 'guess': [52411, 47411, 42411, 37411], 'correct': [41705, 25120, 13946, 7537]}
+ratio: 1.0311036789297456
+Bleu_1: 0.796
+Bleu_2: 0.649
+Bleu_3: 0.518
+Bleu_4: 0.409
+computing METEOR score...
+METEOR: 0.322
+computing Rouge score...
+ROUGE_L: 0.612
+computing CIDEr score...
+CIDEr: 1.401
+Bleu_1: 0.796
+Bleu_2: 0.649
+Bleu_3: 0.518
+Bleu_4: 0.409
+METEOR: 0.322
+ROUGE_L: 0.612
+CIDEr: 1.401
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 313/313 [26:34<00:00,  5.09s/it]
+(lab) liam_sbhoo@instance-1:~/dl-lab-final-project$ 
+
+[0] 0:bash*                                                                                                                  "instance-1" 09:42 27-Jun-23
